@@ -10,6 +10,7 @@ import { join } from 'path';
 import { UserModule } from './user/user.module';
 import { AuthModule } from './auth/auth.module';
 import { RolesGuard } from './auth/roles.guard';
+import { NotificationModule } from './notification/notification.module';
 
 
 @Module({
@@ -24,6 +25,7 @@ import { RolesGuard } from './auth/roles.guard';
     }),
     UserModule,
     AuthModule,
+    NotificationModule,
 
   ],
   controllers: [AppController],
